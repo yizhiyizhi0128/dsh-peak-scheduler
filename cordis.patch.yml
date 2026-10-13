@@ -1,0 +1,10 @@
+# dsh-peak-scheduler bundle layer：由 profile 的 dsh.profile.bundles 挂载，
+# 让 profile 拿到这一行而不必手改 cordis.patch.yml。
+# profile 级 patch 仍可按 id 关掉它（disabled: true）。
+#
+# 注意：本插件依赖官方 schedule 能力（等待任务的耐久存储与到点投递），
+# 由 profile 的 bundles 列表里同时启用
+# `@deepseek-ai/dsh-experimental-schedule-bundle` 提供。
+- insert:
+    - id: peak-scheduler
+      name: dsh-peak-scheduler

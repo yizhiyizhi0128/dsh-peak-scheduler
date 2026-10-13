@@ -1,0 +1,16 @@
+# 依赖与构建产物
+node_modules/
+
+# npm pack 产物（由 npm pack 重新生成，不入库）
+*.tgz
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# 日志与临时文件
+*.log
+npm-debug.log*
